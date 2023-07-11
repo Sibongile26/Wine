@@ -1,8 +1,9 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import '../pages/login.css'
 ("react-bootstrap/Button");
 import Header from "../components/Header";
 import AppContext from "../Context/AppContext";
+import { useNavigate } from "react-router-dom";
 
 import {
   MDBBtn,
@@ -14,7 +15,19 @@ import {
 
 function App() {
 
-  const [email, password] = useContext(AppContext);
+  useEffect(() => {
+
+    
+    
+  }, [])
+  
+
+  const navigate = useNavigate();
+
+  const [data] = useContext(AppContext);
+
+  console.log(data)
+
   const [emailForm, setEmailForm] = useState('');
   const [passForm, setPassForm] = useState('');
 
@@ -28,14 +41,15 @@ function App() {
 
   function Login() {
 
-    if (email === emailForm && password === passForm) {
+   
 
-      alert('prefect')
+    if (data.email === emailForm && data.password === passForm) {
+
+      // navigate("/home");
+      console.log("first")
       
     }
 
-
-    
   }
 
 

@@ -18,7 +18,7 @@ function Products(props) {
                 <p className="card-text">{menu.price}</p>
 
                 <Link to={`/menu/${menu.name}`}>
-                  <Button>Click me</Button>
+                  <Button>Chart</Button>
                 </Link>
               </div>
             </div>

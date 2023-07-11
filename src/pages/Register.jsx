@@ -7,7 +7,7 @@ import '../pages/Register.css'
 
 const Register = () => {
   return (
-    <div>
+    <div className='wallpaper'>
       <Header />
       <Form className='test'>
         <Form.Group className="mb-3" controlId="formBasicEmail">
@@ -26,7 +26,7 @@ const Register = () => {
           <Form.Check type="checkbox" label="Check me out" />
 
         </Form.Group>
-        <Button variant="warning">Submit</Button>
+        <Button variant="danger">Submit</Button>
         <div>
           Register
         </div>

@@ -1,13 +1,8 @@
-.gradient-custom-2 {
-    /* fallback for old browsers */
-    background: #fccb90;
-  
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: -webkit-linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
-  
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background: linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
+
+  .bg-btn{
+    color: gray;
   }
+  
   
   @media (min-width: 768px) {
     .gradient-form {
@@ -26,7 +21,22 @@
   
 }
 
-
+.logo{
+  margin-top: -10px;
+  margin-left: 50px;
+  width: 200px;
+  height: 200px;
+  
+}
+.wallpaper
+{
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image:
+    linear-gradient(to bottom, rgba(170,171,36,1), rgba(117, 19, 93, 0.73)),
+    url('../../src/assets/theWine.jpg');
+}
 
 
 

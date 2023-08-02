@@ -2,8 +2,8 @@ import React from 'react'
 import Header from '../components/Header'
 
 const ContactUs = () => {
-    return (
-        <div>
+  return (
+    <div>
             <Header/>
             ContactUs
             

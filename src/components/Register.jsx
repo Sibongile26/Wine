@@ -1,10 +1,11 @@
 import React, { useContext, useState } from 'react'
 import MyContext from '../context/MyContext' // add MyContext
 
-
 function Register() {
 
   const [data, setData] = useContext(MyContext);
+
+  console.log(data)
 
   const handleChange = (e) => {
     setData({ ...data, [e.target.name]: e.target.value });
@@ -13,7 +14,7 @@ function Register() {
 
   function AddUser() {
 
-    console.log(data)
+    console.log("test")
 
   }
 
@@ -48,6 +49,7 @@ function Register() {
         </div>
 
         <button type="submit" className="btn btn-primary" onClick={AddUser}>Register</button>
+
         <br />
         <a href="/login">Have account already? Login here</a>
       </form>

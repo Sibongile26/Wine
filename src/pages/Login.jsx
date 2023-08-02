@@ -2,8 +2,11 @@ import React, { useContext, useEffect, useState } from "react";
 import '../pages/login.css'
 ("react-bootstrap/Button");
 import Header from "../components/Header";
+
+
 import AppContext from "../Context/AppContext";
 import { useNavigate } from "react-router-dom";
+
 
 import {
   MDBBtn,
@@ -14,12 +17,6 @@ import {
 } from "mdb-react-ui-kit";
 
 function App() {
-
-  useEffect(() => {
-
-    
-    
-  }, [])
   
 
   const navigate = useNavigate();
@@ -45,9 +42,13 @@ function App() {
 
     if (data.email === emailForm && data.password === passForm) {
 
-      // navigate("/home");
-      console.log("first")
-      
+      alert('Login Successfully')
+
+      navigate("/");
+    }
+    else
+    {
+       alert('Login unsuccessfully')
     }
 
   }
@@ -108,10 +109,7 @@ function App() {
               <div className="text-white px-3 py-4 p-md-5 mx-md-4">
                 <h4 class="mb-4">We are more than just a company</h4>
                 <p class="small mb-0">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat.
+                  
                 </p>
               </div>
             </div>

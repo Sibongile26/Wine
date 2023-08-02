@@ -31,9 +31,11 @@ function Header() {
               <NavDropdown.Item href="/register">Register</NavDropdown.Item>
 
               <NavDropdown.Item href="/Login">Login</NavDropdown.Item>
+              <NavDropdown.Item href="/search">Search</NavDropdown.Item>
               <NavDropdown.Divider />
             </NavDropdown>
           </Nav>
+          
         </Navbar.Collapse>
       </Container>
     </Navbar>

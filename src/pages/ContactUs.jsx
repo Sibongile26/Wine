@@ -84,6 +84,9 @@ const ContactUs = () => {
               </div>
             </div>
           </div>
+            <Header/>
+            ContactUs
+            
         </div>
       </div>
     </div>
